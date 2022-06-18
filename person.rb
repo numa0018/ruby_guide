@@ -7,7 +7,8 @@ class Person
     money >= 1000000000
   end
 
-  def money
-    @money
-  end
+  private
+    def money
+      @money
+    end
 end
