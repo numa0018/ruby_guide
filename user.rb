@@ -1,24 +1,9 @@
 class User
-  # setter,getter
-  attr_accessor :name, :address, :email
-
-  # setter
-  # attr_reader
-
-  # getter
-  # attr_writer
-
-  # # setter
-  # def name=(name)
-  #   @name = name
-  # end
-
-  # # getter
-  # def name
-  #   @name
-  # end
-
-  def profile
-    "#{name} (#{address})"
+  attr_reader :name, :address, :email
+  
+  def initialize(name, address, email)
+    @name = name
+    @address = address
+    @email = email
   end
 end
