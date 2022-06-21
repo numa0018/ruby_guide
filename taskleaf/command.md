@@ -18,3 +18,12 @@
   - bin/rails db:drop
 - サーバ起動
   - bin/rails s
+- gem更新 (Gemfile書き加えた時)
+  - bundle
+  - bundle install (bundle と同等)
+
+
+# slim
+ファイル変換
+- bundle exec erb2slim [folder or file] --delete
+  - bundle exec erb2slim app/views/layouts --delete
