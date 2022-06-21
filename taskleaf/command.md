@@ -9,12 +9,15 @@
   - psql -l
 
 # rails 
-- 新規アプリ作成
+- Create NewApp
   - rails new [app name] -d [database]
     - rails new taskleaf -d postgresql
-- モデル作成
+- Create Model
   - bin/rails g model [model name] [attribute:dataType attribute:dataType ....] [option]
     - bin/rails g model Task name:string description:text
+- Create Controller 
+  - bin/rails g controller [controller name] [actionName actionName ....] [option]
+    - bin/rails g controller tasks index show new edit
 - DBのテーブルへのマイグレーション
   - bin/rails db:migrate
 - データベース作成
