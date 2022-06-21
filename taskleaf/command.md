@@ -12,6 +12,11 @@
 - 新規アプリ作成
   - rails new [app name] -d [database]
     - rails new taskleaf -d postgresql
+- モデル作成
+  - bin/rails g model [model name] [attribute:dataType attribute:dataType ....] [option]
+    - bin/rails g model Task name:string description:text
+- DBのテーブルへのマイグレーション
+  - bin/rails db:migrate
 - データベース作成
   - bin/rails db:create
 - データベース削除
