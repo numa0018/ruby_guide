@@ -30,7 +30,6 @@
   - bundle
   - bundle install (bundle と同等)
 
-
 # slim
 ファイル変換
 - bundle exec erb2slim [folder or file] --delete
