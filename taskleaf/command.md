@@ -9,6 +9,8 @@
   - psql -l
 
 # rails 
+- console
+  - bin/rails c
 - Create NewApp
   - rails new [app name] -d [database]
     - rails new taskleaf -d postgresql
@@ -20,6 +22,8 @@
     - bin/rails g controller tasks index show new edit
 - DBのテーブルへのマイグレーション
   - bin/rails db:migrate
+- 適用されているマイグレーションのバージョンを一つ戻す。
+  - bin/rails db:rollback
 - データベース作成
   - bin/rails db:create
 - データベース削除
