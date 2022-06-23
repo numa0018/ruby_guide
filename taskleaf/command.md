@@ -29,7 +29,10 @@
 - gem更新 (Gemfile書き加えた時)
   - bundle
   - bundle install (bundle と同等)
-
+- migrationファイルを作成する
+  - bin/rails g migration CreateBookstitle:string describe:text
+    - bin/rails g migration ChangeTasksNameNotNull
+- migration
 # slim
 ファイル変換
 - bundle exec erb2slim [folder or file] --delete
