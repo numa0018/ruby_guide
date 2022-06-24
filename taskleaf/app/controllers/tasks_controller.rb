@@ -25,7 +25,7 @@ class TasksController < ApplicationController
     # viewに渡したいので、task → @task partial先で{task : @task}設定してる
     @task = Task.new(task_params)
 
-    if task.save
+    if @task.save
       redirect_to @task, notice: "タスク「#{@task.name}」を登録しました。"
     else
       render :new
